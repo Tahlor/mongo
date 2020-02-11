@@ -16,7 +16,7 @@ current_time = 15*60
 query = { "$match": { 'Minutes' : { "$gte" : current_time-60, "$lt" : current_time+60 } } }
 mydoc = mycol.aggregate([ query ])
 
-# Find 
+# Find
 
 # Return all routes within 1 hour of current time
 for x in mydoc:
